@@ -65,16 +65,16 @@
               <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
               <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
             </svg>
-            <span>100% OFFLINE MASKING</span> &bull; Zero Network Latency
+            <span>100% OFFLINE MASKING</span> &bull; 2-5ms Ultra-Low Latency
           </div>
         </div>
 
         <h1 class="hero-headline">
-          Zero-Latency Data Protection for the <span class="highlight-accent">Gen-AI Era.</span>
+          2-5ms Latency Data Protection for the <span class="highlight-accent">Gen-AI Era.</span>
         </h1>
 
         <p class="hero-subheadline">
-          SentinelEdge enforces 100% client-side, regex-powered JIT masking inside your browser. Intercept sensitive API keys, passwords, and PII before they ever reach AI model servers.
+          SentinelEdge enforces 100% client-side, regex-powered JIT masking inside your browser. Intercept sensitive API keys, passwords, and PII in 2-5ms before they ever reach AI model servers.
         </p>
 
         <div class="hero-cta-group">
@@ -118,8 +118,8 @@
         <!-- Trust Metrics -->
         <div class="trust-metrics-grid" aria-label="Security and Performance Metrics">
           <div class="metric-item">
-            <div class="metric-value" style="color: var(--accent-yellow);">0 ms</div>
-            <div class="metric-label">Network Latency Overhead</div>
+            <div class="metric-value" style="color: var(--accent-yellow);">2-5 ms</div>
+            <div class="metric-label">Scan Latency Overhead</div>
           </div>
           <div class="metric-item">
             <div class="metric-value">100%</div>
@@ -142,7 +142,7 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Interactive Masking Engine</h2>
-          <p class="section-subtitle">Type or paste confidential data below to witness real-time 0ms client-side redaction.</p>
+          <p class="section-subtitle">Type or paste confidential data below to witness real-time 2-5ms client-side redaction.</p>
         </div>
 
         <div class="sandbox-container">
@@ -153,7 +153,7 @@
               <span class="dot dot-green"></span>
             </div>
             <div class="sandbox-title-badge">SentinelEdge JIT Engine Sandbox — Live Simulation</div>
-            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--status-active);">0.04ms</div>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--status-active);">2.4ms</div>
           </div>
           <div class="sandbox-body">
             <div class="sandbox-panel sandbox-panel-input">
@@ -320,46 +320,12 @@
             </div>
 
             <div class="specs-feature-block">
-              <h4 class="specs-feature-subtitle">🔒 Eliminate Sensitive Data Exposure in AI Prompts</h4>
-              <p class="specs-feature-text">
-                Continuously monitor and prevent sensitive information—including Cloud Secrets, API Keys, Passwords, Credit Cards, PII, PHI, and Regional ID numbers—from being submitted into Generative AI platforms such as ChatGPT, Claude, and Google Gemini. SentinelEdge automatically redacts sensitive data on-device before network transmission occurs.
-              </p>
-            </div>
-
-            <div class="specs-feature-block" style="margin-top: 1.5rem;">
-              <h4 class="specs-feature-subtitle">⚡ Hybrid DLP Architecture (Instant Paste + JIT Submission Gate)</h4>
-              <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7;">
-                <li><strong style="color: var(--text-primary);">Instant Paste Masking:</strong> Clipboard data containing API keys or credentials is sanitized in <code>&lt; 1ms</code> before touching the DOM, preserving native undo stacks.</li>
-                <li><strong style="color: var(--text-primary);">Just-In-Time (JIT) Submission Gatekeeper:</strong> Type and review prompts 100% naturally without mid-keystroke interference. When hitting Enter or clicking "Send", SentinelEdge captures the event in phase 1 (<code>stopImmediatePropagation</code>), scans text in <code>&lt; 0.8ms</code>, redacts threats, and releases clean requests.</li>
+              <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.8;">
+                <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text-primary);">🔒 Eliminate AI Prompt Leaks:</strong> Redacts API keys, passwords, PII, and regional IDs on-device before hitting AI servers.</li>
+                <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text-primary);">⚡ Hybrid 2-5ms DLP Gate:</strong> Sanitizes clipboard pastes and JIT prompt submissions in 2-5ms across ChatGPT, Claude, and Gemini.</li>
+                <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text-primary);">🌐 100% Air-Gapped Privacy:</strong> Runs strictly in local browser memory with zero cloud storage, tracking, or remote servers.</li>
+                <li><strong style="color: var(--text-primary);">📊 Local Audit & HUD:</strong> Real-time toast alerts, local telemetry counter, and 1-click JSON compliance report export.</li>
               </ul>
-            </div>
-
-            <div class="specs-feature-block" style="margin-top: 1.5rem;">
-              <h4 class="specs-feature-subtitle">🌐 100% Air-Gapped Zero-Cloud Guarantee</h4>
-              <p class="specs-feature-text">
-                Unlike traditional cloud DLP tools that send your prompt text to external servers for inspection, SentinelEdge executes 100% locally inside your browser memory. Zero prompt data, zero clipboard content, and zero credentials ever leave your machine.
-              </p>
-            </div>
-
-            <div class="specs-feature-block" style="margin-top: 1.5rem;">
-              <h4 class="specs-feature-subtitle">🧠 Intelligent Context-Aware Lexicon Engine</h4>
-              <p class="specs-feature-text">
-                Eliminate false positives on non-sensitive numbers (such as years vs. ATM PINs or port numbers vs. ZIP codes) using regex word-boundary look-arounds (<code>hasSensitiveContext</code>). Supported categories include:
-              </p>
-              <div class="specs-tag-list" style="margin-top: 0.75rem;">
-                <span class="specs-badge-pill">Cloud Secrets: AWS, OpenAI, GitHub PATs, Stripe, RSA/PEM Keys, JWT</span>
-                <span class="specs-badge-pill">Databases: PostgreSQL, MySQL, MongoDB, Redis URLs</span>
-                <span class="specs-badge-pill">Regional Identifiers: PAN Cards, Aadhaar, Driving Licenses, +91 Mobile</span>
-                <span class="specs-badge-pill">Financial & PII: Credit Cards, SSNs, Passwords, UPI PINs, MPINs, DOB, Emails</span>
-              </div>
-            </div>
-
-            <div class="specs-feature-block" style="margin-top: 1.5rem;">
-              <h4 class="specs-feature-subtitle">📊 Local Audit Ledger & User Feedback HUD</h4>
-              <p class="specs-feature-text">
-                <strong style="color: var(--text-primary);">Instant Toast Banner:</strong> On-screen visual feedback notifies you whenever secrets are redacted.<br>
-                <strong style="color: var(--text-primary);">Popup HUD & Telemetry:</strong> Review local threat statistics stored in <code>chrome.storage.local</code> and export a zero-retention JSON compliance report with one click.
-              </p>
             </div>
           </div>
 
