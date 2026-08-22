@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SentinelEdge — Zero-Latency Data Protection for the Gen-AI Era</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="SentinelEdge is a 100% client-side, regex-powered JIT masking browser extension that protects enterprise secrets and PII from Gen-AI data leaks in real-time with 0ms latency.">
+  <meta name="keywords" content="Gen-AI security, client-side DLP, data masking, browser extension, zero-cloud retention, PII protection, API key redactor">
+  <meta name="author" content="SentinelEdge Security">
+
+  <!-- OpenGraph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SentinelEdge — Client-Side Gen-AI DLP Extension">
+  <meta property="og:description" content="Prevent API keys, PII, and credentials from reaching AI model prompts with instant 0ms client-side regex redacting.">
+  <meta property="og:image" content="assets/video-thumbnail.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Grid & Glow Overlay -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo" aria-label="SentinelEdge Home Page">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <span class="brand-text">Sentinel<span style="color: var(--accent-yellow);">Edge</span></span>
+        <span class="brand-tag">v2.4 LTS</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#sandbox" class="nav-link">Live Engine</a></li>
+          <li><a href="#demo" class="nav-link">Video Demo</a></li>
+          <li><a href="#documentation" class="nav-link">User Guide</a></li>
+          <li>
+            <div class="nav-status-badge" title="SentinelEdge 100% Client-Side Engine Status">
+              <span class="status-dot"></span>
+              <span>CLIENT-SIDE ACTIVE</span>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section (Above the Fold) -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-badge-wrapper">
+          <div class="hero-pill-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+            <span>100% OFFLINE MASKING</span> &bull; Zero Network Latency
+          </div>
+        </div>
+
+        <h1 class="hero-headline">
+          Zero-Latency Data Protection for the <span class="highlight-accent">Gen-AI Era.</span>
+        </h1>
+
+        <p class="hero-subheadline">
+          SentinelEdge enforces 100% client-side, regex-powered JIT masking inside your browser. Intercept sensitive API keys, passwords, and PII before they ever reach AI model servers.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#" id="btn-download-chrome" class="btn btn-primary" aria-label="Download SentinelEdge Extension for Chrome or Edge">
+            <span class="btn-icon-left">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="4"/>
+                <line x1="21.17" y1="8" x2="12" y2="8"/>
+                <line x1="3.95" y1="6.06" x2="8.54" y2="14"/>
+                <line x1="10.88" y1="21.94" x2="15.46" y2="14"/>
+              </svg>
+            </span>
+            Download for Chrome / Edge
+          </a>
+
+          <a href="#demo" class="btn btn-secondary" aria-label="Scroll to See SentinelEdge Video Demo">
+            <span class="btn-icon-left">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+            </span>
+            Watch Demo (1:20)
+          </a>
+        </div>
+
+        <p class="hero-micro-text">Manifest V3 &bull; Enterprise Group Policy (GPO) Ready &bull; Zero Cloud Retention</p>
+
+        <!-- Trust Metrics -->
+        <div class="trust-metrics-grid" aria-label="Security and Performance Metrics">
+          <div class="metric-item">
+            <div class="metric-value" style="color: var(--accent-yellow);">0 ms</div>
+            <div class="metric-label">Network Latency Overhead</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">100%</div>
+            <div class="metric-label">Client-Side Masking</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">50+</div>
+            <div class="metric-label">Built-in DLP Regex Rules</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">SOC2</div>
+            <div class="metric-label">Architecture Compliant</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Interactive JIT Masking Sandbox -->
+    <section class="sandbox-section" id="sandbox">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Interactive Masking Engine</h2>
+          <p class="section-subtitle">Type or paste confidential data below to witness real-time 0ms client-side redaction.</p>
+        </div>
+
+        <div class="sandbox-container">
+          <div class="sandbox-header-bar">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="sandbox-title-badge">SentinelEdge JIT Engine Sandbox — Live Simulation</div>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--status-active);">0.04ms</div>
+          </div>
+          <div class="sandbox-body">
+            <div class="sandbox-panel sandbox-panel-input">
+              <div class="panel-label">
+                <span>User Input (Raw AI Prompt)</span>
+                <span style="color: var(--accent-yellow);">INPUT</span>
+              </div>
+              <textarea id="sandbox-input" class="sandbox-textarea" aria-label="Test AI Prompt Input" spellcheck="false">Connect to database with sk_live_99a8b7c6d5e4f3a21098. Contact admin at john.doe@sentineledge.io or SSN 000-12-3456.</textarea>
+            </div>
+            <div class="sandbox-panel">
+              <div class="panel-label">
+                <span>Sanitized Output (Sent to AI Server)</span>
+                <span style="color: var(--status-active);">MASKED</span>
+              </div>
+              <div id="sandbox-output" class="sandbox-output-display" aria-live="polite" aria-label="Masked Output Display"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Demo Section (The "See it in Action" Block) -->
+    <section class="demo-section" id="demo">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">See It In Action</h2>
+          <p class="section-subtitle">Watch SentinelEdge dynamically redact secrets in ChatGPT, Claude, and internal LLM interfaces in real-time.</p>
+        </div>
+
+        <div class="video-player-wrapper">
+          <div class="video-container">
+            <video id="sentinel-video-player" class="video-element" controls poster="assets/video-thumbnail.jpg" aria-label="SentinelEdge Product Demonstration Video">
+              <source src="assets/demo-video.mp4" type="video/mp4">
+              Your browser does not support HTML5 video player. Please refer to the documentation section below.
+            </video>
+
+            <!-- Custom Interactive Video Overlay -->
+            <div id="video-overlay" class="video-poster-overlay" style="background-image: url('assets/video-thumbnail.jpg');" role="button" aria-label="Play SentinelEdge Demo Video" tabindex="0">
+              <div class="play-button-large">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="6 3 20 12 6 21 6 3"/>
+                </svg>
+              </div>
+              <div class="play-overlay-text">Click to Play Product Demo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Documentation & Fallback Section -->
+    <section class="docs-section" id="documentation">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Documentation & Deployment</h2>
+          <p class="section-subtitle">Resources for Enterprise Administrators, Security Teams, and Offline Testing.</p>
+        </div>
+
+        <div class="docs-grid">
+          <!-- Card 1: User Guide PDF Fallback -->
+          <div class="docs-card">
+            <div>
+              <div class="docs-card-header">
+                <div class="docs-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <h3 class="docs-card-title">Enterprise User Guide</h3>
+              </div>
+              <p class="docs-card-desc">
+                Prefer offline reading or unable to stream video? Download the comprehensive SentinelEdge Administrator Manual detailing architecture specs, verification benchmarks, and regex syntax.
+              </p>
+              <ul class="docs-feature-list">
+                <li class="docs-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Step-by-step Chrome & Edge developer mode deployment
+                </li>
+                <li class="docs-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Custom Regex Rule Configuration & Test Suite
+                </li>
+                <li class="docs-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Zero-Cloud Retention & Verification Protocols
+                </li>
+              </ul>
+            </div>
+            <a href="assets/SentinelEdge-UserGuide.pdf" id="btn-download-pdf" download class="btn btn-secondary" aria-label="Download SentinelEdge User Guide PDF document">
+              <span class="btn-icon-left">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+              </span>
+              Download User Guide (PDF)
+            </a>
+          </div>
+
+          <!-- Card 2: Quick Installation Guide -->
+          <div class="docs-card">
+            <div>
+              <div class="docs-card-header">
+                <div class="docs-icon" style="color: var(--accent-green);">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </div>
+                <h3 class="docs-card-title">3-Minute Sideload Quickstart</h3>
+              </div>
+              <p class="docs-card-desc">
+                Follow these instructions to load SentinelEdge into Chrome, Brave, or Edge without external web store dependencies:
+              </p>
+              <ol style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.88rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                <li>Download and extract the <strong style="color: var(--text-primary);">SentinelEdge-v2.4.zip</strong> archive.</li>
+                <li>Navigate to <code style="font-family: var(--font-mono); color: var(--accent-yellow);">chrome://extensions</code> in your browser.</li>
+                <li>Enable <strong style="color: var(--text-primary);">Developer Mode</strong> toggle (top right corner).</li>
+                <li>Click <strong style="color: var(--text-primary);">Load Unpacked</strong> and select the extracted folder.</li>
+              </ol>
+            </div>
+            <a href="#hero" class="btn btn-secondary" style="align-self: flex-start;">
+              Back to Download Top &uarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrapper">
+      <div class="footer-copy">
+        &copy; 2026 SentinelEdge Security Inc. All rights reserved. Zero-Cloud Guarantee.
+      </div>
+      <ul class="footer-links">
+        <li><a href="#" id="link-privacy" class="footer-link">Privacy Policy</a></li>
+        <li><a href="#documentation" class="footer-link">Documentation</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener" class="footer-link">GitHub Repository</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacy-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button id="modal-close" class="modal-close-btn" aria-label="Close Privacy Modal">&times;</button>
+      <h2 id="modal-title" class="modal-title">Zero-Cloud Privacy Commitment</h2>
+      <div class="modal-body">
+        <p><strong>Strict Client-Side Guarantee:</strong> SentinelEdge is engineered with zero remote telemetry or cloud data collection. All JIT regex processing occurs strictly inside your local browser memory space.</p>
+        <p><strong>No Prompt Logging:</strong> Your prompts, API tokens, passwords, and personal data never touch SentinelEdge servers—we do not operate any external log collectors.</p>
+        <p><strong>Auditable & Open Architecture:</strong> Designed for high-assurance enterprise environments subject to HIPAA, GDPR, and SOC2 compliance mandates.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
