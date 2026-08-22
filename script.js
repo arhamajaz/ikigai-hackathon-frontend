@@ -107,17 +107,8 @@ function initDownloadHandlers() {
   const pdfBtn = document.getElementById('btn-download-pdf');
 
   if (chromeBtn) {
-    chromeBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      showToast('🚀 SentinelEdge v2.4 LTS package ready! Check sideload quickstart guide below.');
-      
-      // Smooth scroll to documentation after toast
-      setTimeout(() => {
-        const docSection = document.getElementById('documentation');
-        if (docSection) {
-          docSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 1000);
+    chromeBtn.addEventListener('click', () => {
+      showToast('🚀 Downloading SentinelEdge Extension Package (sentineledge-v1.3.0.zip)...');
     });
   }
 
