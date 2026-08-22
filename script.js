@@ -108,7 +108,7 @@ function initDownloadHandlers() {
 
   if (chromeBtn) {
     chromeBtn.addEventListener('click', () => {
-      showToast('🚀 Downloading SentinelEdge Extension Package (sentineledge-v2.1.0.zip)...');
+      showToast('🚀 Downloading SentinelEdge Extension Package (sentineledge-v3.0.0.zip)...');
     });
   }
 
