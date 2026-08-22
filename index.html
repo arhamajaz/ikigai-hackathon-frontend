@@ -42,6 +42,7 @@
           <li><a href="#sandbox" class="nav-link">Live Engine</a></li>
           <li><a href="#demo" class="nav-link">Video Demo</a></li>
           <li><a href="#documentation" class="nav-link">User Guide</a></li>
+          <li><a href="#webstore-specs" class="nav-link">Web Store Specs</a></li>
           <li><a href="assets/SentinelEdge-UserGuide.pdf" download="SentinelEdge-UserGuide.pdf" class="nav-link" style="color: var(--accent-yellow); font-weight: 600;">User Manual (PDF)</a></li>
           <li>
             <div class="nav-status-badge" title="SentinelEdge 100% Client-Side Engine Status">
@@ -289,6 +290,176 @@
               </span>
               Download Extension (.zip)
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Web Store Listing Copy & Technical Specifications Section -->
+    <section class="webstore-section" id="webstore-specs">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Web Store Listing & Technical Specs</h2>
+          <p class="section-subtitle">Official Chrome Web Store, Firefox Add-ons & Enterprise Compliance Manifest</p>
+        </div>
+
+        <div class="webstore-grid">
+          <!-- Card 1: Overview & Feature Highlights (Full Width) -->
+          <div class="specs-card-full">
+            <div class="specs-card-title">
+              <span>🛡️</span> 1. Extension Overview & Value Proposition
+            </div>
+            
+            <div style="background: rgba(255, 230, 0, 0.05); border-left: 3px solid var(--accent-yellow); padding: 1rem 1.25rem; border-radius: 4px; margin-bottom: 2rem;">
+              <h4 style="font-family: var(--font-heading); color: var(--text-primary); font-size: 1.1rem; margin-bottom: 0.3rem;">
+                SentinelEdge: Real-Time Zero-Latency Client-Side DLP Firewall for Generative AI
+              </h4>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">
+                Protect sensitive corporate secrets, PII, credentials, and financial identifiers before they ever reach AI model servers.
+              </p>
+            </div>
+
+            <div class="specs-feature-block">
+              <h4 class="specs-feature-subtitle">🔒 Eliminate Sensitive Data Exposure in AI Prompts</h4>
+              <p class="specs-feature-text">
+                Continuously monitor and prevent sensitive information—including Cloud Secrets, API Keys, Passwords, Credit Cards, PII, PHI, and Regional ID numbers—from being submitted into Generative AI platforms such as ChatGPT, Claude, and Google Gemini. SentinelEdge automatically redacts sensitive data on-device before network transmission occurs.
+              </p>
+            </div>
+
+            <div class="specs-feature-block" style="margin-top: 1.5rem;">
+              <h4 class="specs-feature-subtitle">⚡ Hybrid DLP Architecture (Instant Paste + JIT Submission Gate)</h4>
+              <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7;">
+                <li><strong style="color: var(--text-primary);">Instant Paste Masking:</strong> Clipboard data containing API keys or credentials is sanitized in <code>&lt; 1ms</code> before touching the DOM, preserving native undo stacks.</li>
+                <li><strong style="color: var(--text-primary);">Just-In-Time (JIT) Submission Gatekeeper:</strong> Type and review prompts 100% naturally without mid-keystroke interference. When hitting Enter or clicking "Send", SentinelEdge captures the event in phase 1 (<code>stopImmediatePropagation</code>), scans text in <code>&lt; 0.8ms</code>, redacts threats, and releases clean requests.</li>
+              </ul>
+            </div>
+
+            <div class="specs-feature-block" style="margin-top: 1.5rem;">
+              <h4 class="specs-feature-subtitle">🌐 100% Air-Gapped Zero-Cloud Guarantee</h4>
+              <p class="specs-feature-text">
+                Unlike traditional cloud DLP tools that send your prompt text to external servers for inspection, SentinelEdge executes 100% locally inside your browser memory. Zero prompt data, zero clipboard content, and zero credentials ever leave your machine.
+              </p>
+            </div>
+
+            <div class="specs-feature-block" style="margin-top: 1.5rem;">
+              <h4 class="specs-feature-subtitle">🧠 Intelligent Context-Aware Lexicon Engine</h4>
+              <p class="specs-feature-text">
+                Eliminate false positives on non-sensitive numbers (such as years vs. ATM PINs or port numbers vs. ZIP codes) using regex word-boundary look-arounds (<code>hasSensitiveContext</code>). Supported categories include:
+              </p>
+              <div class="specs-tag-list" style="margin-top: 0.75rem;">
+                <span class="specs-badge-pill">Cloud Secrets: AWS, OpenAI, GitHub PATs, Stripe, RSA/PEM Keys, JWT</span>
+                <span class="specs-badge-pill">Databases: PostgreSQL, MySQL, MongoDB, Redis URLs</span>
+                <span class="specs-badge-pill">Regional Identifiers: PAN Cards, Aadhaar, Driving Licenses, +91 Mobile</span>
+                <span class="specs-badge-pill">Financial & PII: Credit Cards, SSNs, Passwords, UPI PINs, MPINs, DOB, Emails</span>
+              </div>
+            </div>
+
+            <div class="specs-feature-block" style="margin-top: 1.5rem;">
+              <h4 class="specs-feature-subtitle">📊 Local Audit Ledger & User Feedback HUD</h4>
+              <p class="specs-feature-text">
+                <strong style="color: var(--text-primary);">Instant Toast Banner:</strong> On-screen visual feedback notifies you whenever secrets are redacted.<br>
+                <strong style="color: var(--text-primary);">Popup HUD & Telemetry:</strong> Review local threat statistics stored in <code>chrome.storage.local</code> and export a zero-retention JSON compliance report with one click.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Technical Specifications Table -->
+          <div class="specs-card">
+            <div class="specs-card-title">
+              <span>📋</span> 2. Technical Details
+            </div>
+            <div class="specs-table-wrapper">
+              <table class="specs-table">
+                <tbody>
+                  <tr>
+                    <th>Version</th>
+                    <td>1.3.0</td>
+                  </tr>
+                  <tr>
+                    <th>Offered By</th>
+                    <td>SentinelEdge Security / Ikigai</td>
+                  </tr>
+                  <tr>
+                    <th>Extension Size</th>
+                    <td>~1.15 MiB (ultra-lightweight build)</td>
+                  </tr>
+                  <tr>
+                    <th>Category</th>
+                    <td>Developer Tools / Security & Privacy</td>
+                  </tr>
+                  <tr>
+                    <th>Browsers</th>
+                    <td>Google Chrome, Brave, MS Edge, Firefox</td>
+                  </tr>
+                  <tr>
+                    <th>Platforms</th>
+                    <td>ChatGPT, Claude, Google Gemini</td>
+                  </tr>
+                  <tr>
+                    <th>Languages</th>
+                    <td>English</td>
+                  </tr>
+                  <tr>
+                    <th>Contact</th>
+                    <td>sentineledge-security@local.extension</td>
+                  </tr>
+                  <tr>
+                    <th>Trader Status</th>
+                    <td>Non-trader</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Card 3: Privacy & Data Security Declarations -->
+          <div class="specs-card">
+            <div class="specs-card-title">
+              <span>🔒</span> 3. Privacy & Declarations
+            </div>
+            <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.3); padding: 0.85rem; border-radius: 6px; margin-bottom: 1.25rem; font-size: 0.85rem; color: var(--text-primary);">
+              <strong style="color: var(--status-active);">Single-Line Privacy Summary:</strong><br>
+              SentinelEdge handles website content 100% on-device in browser memory. Zero prompt content, clipboard payloads, or intercepted tokens are collected, stored externally, or transmitted to remote servers.
+            </div>
+
+            <h4 style="font-family: var(--font-heading); font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.5rem;">
+              Chrome Web Store Declarations:
+            </h4>
+            <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; margin-bottom: 1rem;">
+              <li><strong style="color: var(--text-primary);">Not sold to third parties:</strong> User data is strictly isolated on-device.</li>
+              <li><strong style="color: var(--text-primary);">Not used for unrelated purposes:</strong> Inspection operates solely for client-side DLP.</li>
+              <li><strong style="color: var(--text-primary);">Not used for creditworthiness:</strong> No credit/lending evaluations performed.</li>
+            </ul>
+
+            <h4 style="font-family: var(--font-heading); font-size: 0.95rem; color: var(--text-primary); margin-bottom: 0.5rem;">
+              Data Categorization Handled:
+            </h4>
+            <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+              <li><strong style="color: var(--text-primary);">Website Content:</strong> Inspected locally in DOM memory only; never exfiltrated.</li>
+              <li><strong style="color: var(--text-primary);">Local Storage (chrome.storage.local):</strong> Stores numerical counters and timestamps only.</li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Store Publishing & Compliance Assets -->
+          <div class="specs-card">
+            <div class="specs-card-title">
+              <span>🚀</span> 4. Store Assets & Compliance
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; margin-bottom: 1rem;">
+              Recommended store assets for publishing SentinelEdge to Chrome Web Store and Firefox Add-ons Directory:
+            </p>
+            <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+              <li><strong style="color: var(--text-primary);">Icons:</strong> 16x16, 48x48, 128x128 PNG (<code>src/assets/icon128.png</code>).</li>
+              <li><strong style="color: var(--text-primary);">Store Screenshots (1280x800):</strong>
+                <ol style="padding-left: 1rem; margin-top: 0.3rem;">
+                  <li>ChatGPT DLP Interception (showing <code>[REDACTED_AWS_KEY]</code>)</li>
+                  <li>Popup HUD with threat counter & incident log</li>
+                  <li>Zero-Cloud Air-Gapped architecture diagram</li>
+                </ol>
+              </li>
+              <li style="margin-top: 0.5rem;"><strong style="color: var(--text-primary);">Promotional Tile:</strong> 440x280 PNG graphic.</li>
+              <li style="margin-top: 0.5rem;"><strong style="color: var(--text-primary);">Hosted Privacy Policy URL:</strong> Static HTML or GitHub Pages link required by Web Store terms.</li>
+            </ul>
           </div>
         </div>
       </div>
